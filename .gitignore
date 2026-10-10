@@ -5,3 +5,7 @@ build/
 uploads/
 *.log
 .DS_Store
+
+# Maven build output and local dependency cache
+/target/
+/.m2/
