@@ -4,9 +4,9 @@ Spring Boot API backed by PostgreSQL JSONB document storage.
 
 ## Deploy to Render
 
-This repository includes a Render Blueprint at its root. In Render, select **New + → Blueprint**, connect this repository, and apply `render.yaml`. Render builds the Docker image from `Dockerfile`, creates the PostgreSQL database, generates `JWT_SECRET`, and checks `/api/health`.
+This repository includes a Render Blueprint at its root. In Render, select **New > Blueprint**, connect this repository, and apply `render.yaml`. Render builds the Docker image from `Dockerfile`, creates the PostgreSQL database, generates `JWT_SECRET`, and checks `/api/health`. The Blueprint allows browser requests from `https://smart-campus-frontend-iota.vercel.app`.
 
-After deployment, set the frontend's `VITE_API_URL` to the service URL ending in `/api`. The new database starts empty. Existing MongoDB records are not migrated; user accounts must register again unless data is migrated separately.
+After deployment, copy the service URL shown by Render and set the Vercel project's `VITE_API_URL` environment variable to that URL ending in `/api`, then redeploy the frontend. The new database starts empty. Existing MongoDB records are not migrated; user accounts must register again unless data is migrated separately.
 
 ## Runtime configuration
 
