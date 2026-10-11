@@ -1,0 +1,7 @@
+.git
+.m2
+node_modules
+target
+uploads
+.env
+*.log
