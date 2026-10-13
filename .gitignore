@@ -9,3 +9,4 @@ uploads/
 # Maven build output and local dependency cache
 /target/
 /.m2/
+powershell.cmd
